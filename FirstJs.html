@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS First </title>
+    <script>
+      function  mycreatfunction() {
+            document.getElementById("head1").innerHTML="Paragraph changed.";
+        }
+    </script>
+</head>
+<body>
+    <h2>What can JavaScript Do?</h2>
+    <p id="demofirst">JavaScript can change HTML content. </p>
+    <button type="submit" onclick='document.getElementById("demofirst").innerHTML = "Helo First JavaScript code!"'>
+    Click Me change!</button>
+     <h2>What can JavaScript Do2?</h2>
+    <p id="demo">JavaScript can change HTML content2. </p>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello Second JavaScript'">
+    Click Me change!</button> 
+    <h2>JavaScript Using Light Light?</h2>
+
+    <p>JavaScript can change HTML attribute values.</p>
+            
+    <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p> 
+    <button type="button" onclick="document.getElementById('myImage').src='OnBulf.gif'">Turn On</button>
+    <img id="myImage" src="bulfOff.gif" alt="bulf" style="width: 20%;">  
+    <button type="button" onclick="document.getElementById('myImage').src='bulfOff.gif'">Turn Off</button>  
+    
+    <h1>I am successfull in Light on and off </h1>
+    <p id="demo2">JavaScript can hide HTML elements.</p>      
+<button type="button" onclick="document.getElementById('demo2').style.display='none'">Hide Up Writting</button>
+<button  type="button" onclick="document.getElementById('demo2').style.display=''">Show Up Writting</button>
+<p>JavaScript is a very interesting Programmign Language! That why i love THis Laguage</p>
+
+<p>JavaScript can show hidden HTML elements.</p>
+<p id="show" style="display: none;">Hello Wellcome My Best programming Language in JavaScript</p>  
+<button type="button" onclick="document.getElementById('show').style.display='block'">Laguage Show!</button>     
+<h1>This is very interesting part in JavaScript</h1>  
+<p id="demo4">JavaScript can change the style of an HTML element.</p>
+<button type="button" onclick="document.getElementById('demo4').style.fontSize='30px'">Font size change!</button>
+<h2>JavaScript in Body</h2>
+<p id="demo5"></p>
+<script>
+    document.getElementById('demo5').innerHTML='My fist Script use Javascript';
+</script>
+<h2>Javascript Head</h2>
+<p id="head1">A paragraph</p>
+<button type="button" onclick="mycreatfunction()">Try it!</button>
+
+<h2>JavaScript in Body</h2>
+
+<p id="demoo">A Paragraph.</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  d
+  ocument.getElementById("demoo").innerHTML = "Paragraph changed hi.";
+}
+</script>
+
+<h2>External JavaScript</h2>
+
+<p id="demoexternal">A Paragraph.</p>
+
+<button type="button" onclick="myFunction()">Try external</button>
+<p>(myFunction is stored in an external file called "myScript.js")</p>
+<script src="myScript.js"></script>
+<p id="external">A Paragraph external.</p>
+
+<button type="button" onclick="exFunction()"> external</button>
+<p>(myFunction is stored in an external file called "myScript.js")</p>
+<script src="external\externalfile.js"></script>
+<script>
+    document.write("hi Hello world Javascript writting files")
+</script>
+<h2>My First Web Page</h2>
+<p>My First Paragraph.</p>
+
+<p id="demonum"></p>
+
+<script>
+document.getElementById("demonum").innerHTML = 5 + 6;
+</script>
+<h2>My First Web Page</h2>
+<p>My first paragraph.</p>
+
+<p>Never call document.write after the document has finished loading.
+It will overwrite the whole document.</p>
+
+<script>
+document.write(5 + 96);
+
+</script>
+<p>My first paragraph.</p>
+<h1>JavaScript alert function</h1>
+
+<script>
+    console.log(53 + 6);
+</script>
+<h2>The window.print() Method</h2>
+
+<p>Click the button to print the current page.</p>
+
+<button onclick="window.print()">Print this page</button>
+
+<h2>Now i am testing all JavaScript Print method</h2>
+<h3>Number one precess in print js</h3>
+<script>
+    document.write("hi sobuj mia wellcome to javascript")
+    window.alert("kemon aso mia")
+    window.print('ki')
+    
+</script>
+<br>
+<button type="button" onclick="document.write('ki thik ase')">all delete uper text</button>
+</body>
+</html>

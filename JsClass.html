@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Learning</title>
+</head>
+<body>
+    
+<h2>JavaScript Statements</h2>
+
+<p>A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer.</p>
+<p id="demo"></p>
+<p id="next"></p>
+<script>
+    var x,y,z;
+    x=10;
+    y=9;
+    z=x+y;
+    document.getElementById('demo').innerHTML=" The sum of value = "+ z +" total"
+    document.getElementById("next").innerHTML = "Hello Dolly.";
+</script>
+<p>JavaScript statements are separated by semicolons.</p>
+
+<p id="demo1"></p>
+
+<script>
+var a, b, c;
+a = 4;
+b = 6;
+c = a + b;
+document.getElementById("demo1").innerHTML = c;
+</script>
+<p>
+    The best place to break a code line is after an operator or a comma.
+    </p>
+    
+    <p id="demo2"></p>
+    
+    <script>
+    document.getElementById("demo2")
+    .innerHTML =
+    "Hello Dolly! jahan";
+    </script>
+
+<p>JavaScript code blocks are written between { and }</p>
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+<p id="demo11"></p>
+<p id="demo22"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo11").innerHTML = "Hello Dolly!";
+  document.getElementById("demo22").innerHTML = "How are you?";
+}
+</script>
+<p id="dem"></p>
+
+<script>
+var x;
+var $=66
+x = 6;
+document.getElementById("dem").innerHTML = x*10+$;
+</script>
+
+<h2>JavaScript Expressions</h2>
+
+<p>Expressions compute to values.</p>
+
+<p id="demoal"></p>
+
+<script>
+document.getElementById("demoal").innerHTML = "John" + " "+3  + " Doe";
+// javascript comment write this is called single line comment
+/* This is called Multiline comments
+write down second line
+another line code comment*/
+</script>
+<h1 id="myH"></h1>
+<p id="myP"></p>
+
+<script>
+// Change heading:
+document.getElementById("myH").innerHTML = "JavaScript Comments";
+// Change paragraph:
+document.getElementById("myP").innerHTML = "My first paragraph.";
+</script>
+<p id="demonumver"></p>
+<script>
+    var a=2;
+    const num =44;
+
+   document.write(a+num)
+</script>
+<h1>ki kaj</h1>
+<script>
+    num1=25;
+    document.write(num1);
+</script>
+<h2>JavaScript Scope</h2>
+
+<p>Outside myFunction() carName is undefined.</p>
+
+<p id="demoone"></p>
+
+<p id="demotwo"></p>
+
+<script>
+myFunction();
+
+function myFunction() {
+  var carName = "Volvo";
+  document.getElementById("demoone").innerHTML = typeof carName + " " + carName;
+}
+document.getElementById("demotwo").innerHTML = typeof carName;
+</script>
+<h2>Declaring a Variable Using let</h2>
+
+<p id="demoo"></p>
+
+<script>
+var  x = 10;
+// Here x is 10
+{  
+  let x = 2;
+  // Here x is 2
+}
+// Here x is 10
+document.getElementById("demoo").innerHTML = x;
+</script>
+<h2>Declaring a Variable Using let</h2>
+
+<p id="demm"></p>
+
+<script>
+var  x = 10;
+// Here x is 10
+{  
+  var x = 2;
+  // Here x is 2
+}
+// Here x is 10
+document.getElementById("demm").innerHTML = x;
+</script>
+</body>
+</html>
