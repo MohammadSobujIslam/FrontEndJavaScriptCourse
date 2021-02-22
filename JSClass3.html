@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String</title>
+</head>
+<body>
+    <h1>JavaScript Strings Part Learning Here</h1>
+    <p id="stringid1"></p>
+    <p id="stringid2"></p>
+    <p id="stringid3"></p>
+    <p id="stringid4"></p>
+    <p id="stringid5"></p>
+    <p id="stringid6"></p>
+    <p id="stringid7"></p>
+    <p id="stringid8"></p>
+    <p id="stringid9"></p>
+    <p id="stringid10"></p>
+    <p id="stringid11"></p>
+    <p id="change"></p>
+    <h2>JavaScript String Methods</h2>
+    <p id="pid11"></p>
+
+<p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo1">Please visit Microsoft and Microsoft!</p>
+    <script>
+        var str='Hi Mohammad Sobuj Mia \'kemon aso\''
+        var str1="Your Favourite Programming Language"
+        document.getElementById('stringid1').innerHTML=str+" <br>"+str1;
+        document.getElementById('stringid2').innerHTML=typeof str;
+        document.getElementById('stringid3').innerHTML=str.length
+        var strr='My dear language is JavaScrip'+
+        "every web developer need know javascript"
+        document.getElementById('stringid4').innerHTML=strr
+        var x = "John";        // x is a string
+        var y = new String("John"); 
+        var z=new String("Doe kemaron") // y is an object
+
+        document.getElementById("stringid6").innerHTML =
+          typeof x + "<br>" + typeof y;
+          var str2="The character \\ is called backslash"
+          document.getElementById('stringid5').innerHTML=str2;
+
+          document.getElementById('stringid7').innerHTML=(x==y)+" "+(y==z)+" "+ typeof z;
+          var str3=String('Universal')
+          document.getElementById('stringid8').innerHTML=str3+" "+typeof str3 +"  "+(x==str3);
+          var str4 = "Please locate where 'locate' occurs!";
+           var pos = str4.indexOf("locate");
+           var pos2=str4.indexOf("ease")
+           var pos3=str4.lastIndexOf("occurs!")
+           var pos4=str4.search('lease')
+           document.getElementById('stringid9').innerHTML=pos+" "+pos2+" "+pos3+
+           " ,string length =  "+str4.length+" "+pos4
+           var str5="Apple, Banana, Kiwi, Orange"
+           document.getElementById('stringid9').innerHTML=str5.slice(6,13)+" "+str5.substring(6,13)
+           document.getElementById('stringid10').innerHTML=str5.slice(-12,-1)+"----- "+
+           str5.substr(6,5)+"--- "+str5.substr(-9)
+           function myFunction(){
+               var str6=document.getElementById('demo1').innerHTML;
+               var txt=str6.replace(/Microsoft/g,"W3School new Large learning programming platform");
+               document.getElementById('demo1').innerHTML=txt;
+           }
+           var text2="hello world"
+           document.getElementById('change').innerHTML=text2.toUpperCase();
+           var txt3="Mohammad"
+           var txt4="Sobuj Islam"
+           var txt5="are you single"
+           var txt6=txt3.concat(" ",txt4," ",txt5);
+           document.getElementById('stringid11').innerHTML=txt6;
+       
+           
+    </script>
+   
+    
+    <p id="pid12"></p>
+    <script>
+           var strv11="   Hello WorlD KI Right"
+
+         document.getElementById('pid1').innerHTML=strv11
+      var numstr="7"
+      document.getElementById('pid111').innerHTML=strv.padStrat(4,0);
+    </script>
+
+</body>
+</html>

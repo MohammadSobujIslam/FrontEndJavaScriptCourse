@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String part Learning javascript</title>
+</head>
+<body>
+    <p id="pid1"></p>
+    <p id="pid2"></p>
+    <p id="pid3"></p>
+    <p id="pid4"></p>
+    <p id="pid5"></p>
+    <p id="pid6"></p>
+    <p id="pid7"></p>
+    <p id="pid8"></p>
+    <p id="pid9"></p>
+    <p id="pid10"></p>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demu"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demu2"></p>
+    <p id="demoo"></p>
+    <script>
+        var str="15"
+        document.getElementById('pid1').innerHTML=str.padStart(5,0)+"<br> "+
+        str.padEnd(7,0)
+        var str = "HELLO WORLD";
+        document.getElementById("demo").innerHTML = str.charAt(4);
+        document.getElementById("pid2").innerHTML = str.charCodeAt(0);
+        document.getElementById("pid3").innerHTML = str[6]
+        var str = "a,b,c,d,e,f";
+       var arr = str.split("");
+       arr[0]="A"
+       document.getElementById("pid4").innerHTML = arr;
+       strr="Hello world"
+       var strr2=strr.split(" ");
+       document.getElementById('pid4').innerHTML=strr2;
+       document.getElementById('pid6').innerHTML=strr2[1]
+       var strr="HelloWorld"
+       var arr=strr.split("")
+       var text=" ";
+      
+       for(var i=0;i<arr.length;i++){
+           text+=arr[i] + "<br>";
+       }
+       document.getElementById('pid7').innerHTML=text;
+
+    </script>
+    <h1>JavaScrip Number part learning</h1>
+    <script>
+        var x = 3.14;
+        var y = 3;
+         document.getElementById("demo").innerHTML = x + "<br>" + y;
+         var x = 999999999999999;
+        var y = 9999999999999999;
+        document.getElementById("demo").innerHTML = x + "<br>" + y +"<br> "+y.length;
+        var x = "100";
+         var y = "10";
+        var z = x / y;   
+        document.getElementById("demu").innerHTML = z;
+        var x = 100 / "Apple";
+        document.getElementById("demo1").innerHTML = isNaN(x);
+        var x = NaN;
+       document.getElementById("demo2").innerHTML = typeof x;
+       var myNumber = 2;
+       var text1="";
+       while(myNumber!=Infinity){
+           myNumber=myNumber*myNumber;
+           text1+=myNumber+"<br>";
+       }
+       document.getElementById('demo3').innerHTML=text1;
+       document.getElementById('demo4').innerHTML=-myNumber/2
+       document.getElementById('demu').innerHTML=typeof Infinity
+       document.getElementById('demu2').innerHTML=0xFF
+       document.getElementById('demo5').innerHTML=0xF1
+    var myNumber = 32;
+        document.getElementById("demo6").innerHTML =
+           "32 = " + "<br>" + 
+          " Decimal " + myNumber.toString(10) + "<br>" +
+          " Hexadecimal " + myNumber.toString(16) + "<br>" +
+          " Octal " + myNumber.toString(8) + "<br>" +
+          " Binary " + myNumber.toString(2);
+          var x = 123;
+        var y = new Number(123);
+        document.getElementById("demo7").innerHTML = typeof x + "<br>" + typeof y;
+        var anum=23;
+        document.getElementById('demo8').innerHTML=anum.toString()+typeof anum.toString()+" "+
+        "  "+typeof anum+" "+anum.toExponential();
+        var x = 9.356;
+document.getElementById("demoo").innerHTML =
+  x.toFixed(0) + "<br>" +typeof x.toFixed()+
+  x.toFixed(2) + "<br>" +
+  x.toFixed(4) + "<br>" +
+  x.toFixed(6);
+  var x = 9.656;
+document.getElementById("demoo").innerHTML = 
+  x.toPrecision() + "<br>" +
+  x.toPrecision(2) + "<br>" +
+  x.toPrecision(4) + "<br>" +
+  x.toPrecision(6); 
+  document.getElementById("demo").innerHTML = 
+  Number(true) + "<br>" +
+  Number(false) + "<br>" +
+  Number("10") + "<br>" + 
+  Number("  10") + "<br>" +
+  Number("10  ") + "<br>" +
+  Number(" 10  ") + "<br>" +
+  Number("10.33") + "<br>" + 
+  Number("10,33") + "<br>" +
+  Number("10 33") + "<br>" +
+  Number("John");
+    </script>
+ 
+</body>
+</html>
